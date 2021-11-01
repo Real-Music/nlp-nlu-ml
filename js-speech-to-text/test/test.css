@@ -1,0 +1,96 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #ffc600;
+  font-family: "helvetica neue";
+  font-weight: 200;
+  font-size: 20px;
+}
+.words {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem 1rem 5rem;
+  background: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(#d9eaf3),
+      color-stop(4%, #fff)
+    )
+    0 4px;
+  background-size: 100% 3rem;
+  position: relative;
+  line-height: 3rem;
+}
+
+p {
+  margin: 0 0 3rem;
+}
+.words:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  border: 1px solid;
+  border-color: transparent #efe4e4;
+}
+
+body {
+  background: darkorange;
+}
+
+.text {
+  margin: 50px auto 0 auto;
+  display: flex;
+  background: white;
+  width: fit-content;
+  width: max-content;
+  border-radius: 5px;
+  padding: 3px;
+  place-items: center;
+  height: 30px;
+}
+.text input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.fas {
+  padding: 5px 8px;
+  border-radius: 50%;
+  color: darkorange;
+  transition: all ease-in-out 250ms;
+  cursor: pointer;
+}
+
+.fas:hover {
+  border: 1px solid darkorange;
+}
+
+.fas.active {
+  background: darkorange;
+  color: white;
+  animation: mic 0.8s ease-in-out 0s infinite;
+}
+
+@keyframes mic {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
